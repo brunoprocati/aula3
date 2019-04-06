@@ -1,0 +1,47 @@
+package br.com.atm.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.atm.model.Pessoa;
+
+public class PessoaDAO implements DAO {
+	
+	private List<Pessoa> listaDePessoas = new ArrayList<Pessoa>();
+
+	@Override
+	public void incluir(Object object) {
+		listaDePessoas.add((Pessoa) object);
+		
+	}
+
+	@Override
+	public void atualizar(Object object) {
+		Pessoa pessoaParaAtualizar =(Pessoa) object;
+		for(Pessoa pessoa : listaDePessoas) {
+			if(pessoa.getCpf().equals(pessoaParaAtualizar.getCpf())) {
+				pessoa.setNomeDoCliente(pessoaParaAtualizar.getNomeDoCliente());
+				pessoa.setDataDeNascimento(pessoaParaAtualizar.getDataDeNascimento());
+			}
+		}
+		
+	}
+
+	@Override
+	public void deletar(Object object) {
+		Pessoa pessoaParaDeletar = (Pessoa) object;
+		Pessoa pessoaTemporaria = null;
+		for(Pessoa pessoa : listaDePessoas) {
+			if(pessoa.getCpf().equals());
+		}
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Object> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,32 @@
+package br.com.atm.app;
+
+import javax.swing.JOptionPane;
+
+public class aula2classes {
+	Integer valorMenu = Integer.parseInt(JOptionPane .showInputDialog(
+							"1 - Para inserir novas pessoas \n"+ 
+							"2 - Atualizar pessoa \n" + 
+							"3 - Deletar pessoa \n" + 
+							"4 - Listar pessoas \n" + 
+							"5 - Sair do programa"));
+
+	while(valorMenu != 5) {
+		valorMenu = Integer.parseInt(JOptionPane
+				.showInputDialog("1 - Para inserir novas pessoas \n"
+						+ "2 - Atualizar pessoa \n"
+						+ "3 - Deletar pessoa \n"
+						+ "4 - Listar pessoas \n"
+						+ "5 - Sair do programa"));
+		if(valorMenu==2) {
+			String nome = JOptionPane.showInputDialog("Informe o seu nome");
+			String cpf = JOptionPane.showInputDialog("Informe o seu CPF");
+			
+			optional<Pessoa> pessoaOptional = pessoaDAO.listar()
+					.stream()
+					.filter(pessoa->pessoa.getCpf().equals(cpf)).findFirst();
+			pessoaDAO.atualizar(pessoaOptimal.get()));
+		}
+		
+	}
+
+}

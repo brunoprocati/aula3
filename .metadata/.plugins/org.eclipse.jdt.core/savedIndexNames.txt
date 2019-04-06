@@ -1,0 +1,7 @@
+INDEX VERSION 1.130+Z:\Bruno-Procati\.metadata\.plugins\org.eclipse.jdt.core
+1893439535.index
+3284473004.index
+3995237016.index
+100977446.index
+3410638234.index
+2713861146.index

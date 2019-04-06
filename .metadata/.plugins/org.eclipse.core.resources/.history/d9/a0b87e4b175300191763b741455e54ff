@@ -1,0 +1,12 @@
+package com.atm.model;
+import java.time.LocalDate;
+
+public class Pessoa {
+
+	public Pessoa(String nomeDoCliente, String cpf, LocalDate dataDeNascimento) {
+		// TODO Auto-generated constructor stub
+	}
+	private String nomeDoCliente;
+	private String cpf;
+	private LocalDate dataDeNascimento; 
+}

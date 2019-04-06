@@ -1,0 +1,10 @@
+package br.com.atm.model;
+
+import br.com.atm.connection.JDBCConnection;
+
+public class App {
+	public static void main (String[] args) { 
+		System.out.println(JDBCConnection.getConnection());
+	}
+
+}

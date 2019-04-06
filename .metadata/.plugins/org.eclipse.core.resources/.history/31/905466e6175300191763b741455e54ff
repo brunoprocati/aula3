@@ -1,0 +1,5 @@
+package com.atm.dao;
+
+public class ContaCorrenteDAO {
+
+}

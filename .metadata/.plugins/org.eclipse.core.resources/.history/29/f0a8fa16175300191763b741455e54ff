@@ -1,0 +1,5 @@
+package br.com.atm.dao;
+
+public interface DAO {
+
+}

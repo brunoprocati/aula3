@@ -1,0 +1,27 @@
+package com.atm.controller;
+
+import java.time.LocalDate;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.atm.model.ContaCorrente;
+import com.atm.model.Pessoa;
+
+public class AtmControllerTest {
+	
+	private Double valor= 100.0;
+	private Pessoa julinho = new Pessoa("julinho ","01234567890", LocalDate.of(1988,8, 8));
+	
+	@Test
+	public void retornaFalseCasoRealizeUmSaqueComSaldoInsuficiente() {
+		ContaCorrente contaCorrente = new ContaCorrente(0.0);
+		Assert.assertFalse(contaCorrente.saque(valor,julinho));
+	}
+	@Test
+	public void retornaTrueCasoRealizeUmSaqueComSaldoSuficiente() {
+		ContaCorrente contaCorrente = new ContaCorrente(500.0);
+		Assert.assertFalse(contaCorrente.saque(valor,julinho));
+	}
+
+}

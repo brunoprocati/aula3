@@ -1,0 +1,9 @@
+package com.atm.model;
+import java.time.LocalDate;
+
+public class caixaautomatico {
+
+	private String NomeDocliente;
+	private String Cpf;
+	private LocalDate DataDeNascimento; 
+}

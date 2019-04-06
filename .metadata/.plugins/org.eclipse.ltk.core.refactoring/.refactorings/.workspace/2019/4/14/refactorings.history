@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;caixa-automático&apos; to &apos;caixa_automatico_old&apos;&#x0D;&#x0A;- Original element: &apos;caixa-automático&apos;&#x0D;&#x0A;- Renamed element: &apos;caixa-automático&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;caixa-automático&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=caixa-automático" name="caixa_automatico_old" references="true" stamp="1554557840785" version="1.0"/>
+</session>
